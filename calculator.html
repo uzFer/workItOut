@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--  NAVIGATION BAR  -->
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__links" id="navbar__logo">WorkItOut</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__item">
+          <a href="calculator.html" class="navbar__links" id="calculator-page">Calculator</a>
+        </li>
+        <li class="navbar__item">
+          <a href="workouts.html" class="navbar__links" id="workouts-page">Workouts</a>
+        </li>
+        <li class="navbar__item">
+          <a href="about.html" class="navbar__links" id="about-page">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="dropdown__container">
+    <div class="dropdown" id="Q1">
+      <h3 STYLE="margin-bottom: 20px">What is your experience level with workout splits?</h3>
+      <select class="Q1__content">
+        <option value="C1">Never, wut dat be </option>
+        <option value="C2">Sometimes, i think </option>
+        <option value="C3">Certified Gym Chad </option>
+      </select>
+      <!--       <h2 class="printDis" id = 'printDis'></h2> -->
+    </div>
+
+
+    <div class="dropdown" id="Q2">
+      <h3 STYLE="margin-bottom: 20px">What type of workout do you want to plan?</h3>
+      <select class="Q2__content">
+        <option value="C1">Cardio</option>
+        <option value="C2">Weightlifting</option>
+      </select>
+    </div>
+
+
+
+    <div class="dropdown" id="Q3">
+      <h3 STYLE="margin-bottom: 20px">How long do you want your workout to be?</h3>
+      <select class="Q3__content">
+        <option value="C1">Under 30 Mins</option>
+        <option value="C2">30 - 1 hour</option>
+        <option value="C2">1 - 2 hour</option>
+      </select>
+    </div>
+
+
+    <div class="dropdown" id="Q4">
+      <h3 STYLE="margin-bottom: 20px">What body groups would you like to target?</h3>
+      <select class="Q4__content">
+        <option value="C1">Upper body</option>
+        <option value="C2">Lower body</option>
+        <option value="C2">Full body</option>
+      </select>
+    </div>
+
+    <div class="dropdown" id="Q5">
+
+      <h3 STYLE="margin-bottom: 20px">What Upper Body Groups would you like to target? Select all that apply.</h3>
+
+      <div class="Q5__content">
+        <input type="checkbox" id='Chest' tabindex="1">Chest</input>
+        <input type="checkbox" id='Biceps' tabindex="2">Biceps</input>
+        <input type="checkbox" id='Triceps' tabindex="3">Triceps</input>
+        <input type="checkbox" id='Back' tabindex="4">Back</input>
+        <input type="checkbox" id='Shoulders' tabindex="5">Shoulders</input>
+      </div>
+
+
+    </div>
+
+
+    <div class="dropdown" id="Q6">
+
+      <h3 STYLE="margin-bottom: 20px">What Lower Body Groups would you like to target? Select all that apply.</h3>
+
+      <div class="Q6__content">
+        <input type="checkbox" id='Quads' tabindex="1">Quads  </input>
+        <input type="checkbox" id='Hamstrings' tabindex="2">Hamstrings</input>
+        <input type="checkbox" id='Glutes' tabindex="3">Glutes</input>
+        <input type="checkbox" id='Calves' tabindex="4">Calves</input>
+      </div>
+
+
+    </div>
+
+
+
+    <button class="submit__button">Next</button>
+
+  </div>
+  <!--   /*
+
+  <div class="exercises">
+    <div class="exercise__container" id="chest">
+      <div class="exercise__img--container">
+        <div class="exercise__img--card">
+          <img src="InclineBenchPress.jfif" alt="Incline Bench Press">
+        </div>
+      </div>
+      <div class="exercise__content">
+        <h1>aaaaa</h1>
+        <h2>aaaaa</h2>
+        <p>aaaaa</p>
+      </div>
+    </div>
+
+
+
+
+  </div>
+  */ -->
+
+
+
+
+
+
+
+  <!--  
+  <div class="exercises__container" id="quads">
+    <div class="exercise1">
+
+      <div class="exercise__card">
+        <div class="exercise_card-heading">
+          <h2>Squats</h2>
+        </div>
+        <div class="exercise_card-intro">
+          <p></p>
+        </div>
+        <div class="exercise_card-video">
+
+        </div>
+        <ul class="exercise_card-steps">
+          <li>Stand with your feet shoulder-width apart. Maintain back integrety and raise your chest</li>
+          <li>If using barbell, Grip the bar across shoulders and support on your upper back.</li>
+          <li>Bend your knees until your hips are below your knees (Quads are parallel to floor)</li>
+          <li>Raise body/bar up to original position, and exhale at the top</li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+
+
+  <div class="results" id="result">
+    <center>
+    <div class="results-heading">
+      <h1>Your Result!</h1>
+    </div>
+    <div class="results-description" id="pdf">
+      Based on your needs, here is a perfect split for you to try:
+    </div>
+    
+    <div class="pdf__container">
+      <embed src="aaa.pdf#toolbar=0" type="application/pdf" width="100%" height="600px" />
+    </div>
+      </center>
+  </div>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

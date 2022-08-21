@@ -226,6 +226,10 @@ body {
   color: #fff;
 }
 
+a:hover{
+  color: #bababa;
+}
+
 .main__btn-content:hover {
   padding: 10px;
   color: #000000;

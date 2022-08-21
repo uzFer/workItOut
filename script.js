@@ -165,13 +165,66 @@ const saveCurrentInfo = () => {
   if (current == 99) {
 
     submitButton.style.display = 'none';
+    var pdfName = "";
 
-    if(sessionStorage.getItem("Calves") == true){
-      
+    if (sessionStorage.getItem("Chest") == "true") {
+      console.log("Going in here");
+      if (pdfName != "") {
+        pdfName += "+"
+      }
+      pdfName += "Chest";
+
     }
-    
+    if (sessionStorage.getItem("Shoulders") == "true") {
+      if (pdfName != "") {
+        pdfName += "+"
+      }
+      pdfName += "Shoulder";
+    }
+    if (sessionStorage.getItem("Biceps") == "true") {
+      if (pdfName != "") {
+        pdfName += "+"
+      }
+      pdfName += "Biceps";
+    }
+    if (sessionStorage.getItem("Back") == "true") {
+      if (pdfName != "") {
+        pdfName += "+"
+      }
+      pdfName += "Back";
+    }
+    if (sessionStorage.getItem("Triceps") == "true") {
+      if (pdfName != "") {
+        pdfName += "+"
+      }
+      pdfName += "Triceps";
+    }
+    if (sessionStorage.getItem("Glutes") == "true") {
+      if (pdfName != "") {
+        pdfName += "+"
+      }
+      pdfName += "Glutes";
+    }
+    if (sessionStorage.getItem("Hamstrings") == "true") {
+      if (pdfName != "") {
+        pdfName += "+"
+      }
+      pdfName += "Hamstrings";
+    }
+    if (sessionStorage.getItem("Quads") == "true") {
+      if (pdfName != "") {
+        pdfName += "+"
+      }
+      pdfName += "Quads";
+    }
+    if (sessionStorage.getItem("Calves") == "true") {
+      if (pdfName != "") {
+        pdfName += "+"
+      }
+      pdfName += "Calves";
+    }
 
-    document.getElementById("pdf").src =
+    document.getElementById("pdf").src = "PDFS/" + pdfName + ".pdf#toolbar=0";
     document.getElementById("result").style.display = 'block';
   }
 }

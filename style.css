@@ -213,12 +213,13 @@ body {
   justify-content: center;
   align-content: center;
   font-size: 16px;
-  width: 45%;
+  width: 40%;
   border-radius: 8px;
   transition-duration: 0.4s;
   margin-bottom: 10px;
   transition: all 0.3s ease;
   height: 55px;
+  padding: 5px;
 }
 
 .main__btn-content {
@@ -238,18 +239,18 @@ a:hover{
 
 @media screen and (max-width: 800px) {
   .main__btn {
-    background: #0040ff;
+    background: #0fafff;
     color: #fff;
     display: flex;
     justify-content: center;
     align-content: center;
-    font-size: 14px;
+    font-size: 13px;
     width: 90%;
     border-radius: 12px;
     transition-duration: 0.4s;
     margin-bottom: 10px;
     transition: all 0.3s ease;
-    height: px;
+    height: 65px;
   }
   
   .home__container { 
@@ -259,9 +260,9 @@ a:hover{
     height: 100%;
     text-align: center;
     margin-top: -100px;
-    padding: 45px;
+    padding: 25px;
     color: #fff;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: normal;
   }
 
@@ -648,11 +649,7 @@ p {
   font-weight: bold;
 }
 
-
 .exercise__card-intro {
   font-size: 12px;
   margin-bottom: 4px;
-}
-.exercise__card-steps ul{
-
 }
